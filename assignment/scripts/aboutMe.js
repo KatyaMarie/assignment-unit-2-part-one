@@ -24,16 +24,18 @@ console.log('this Prime Digital Academy student\'s full name is:', fullName);
 console.log('this Prime Digital Academy student\'s full name is:', fullName);
 
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
-let luckyNumber = 8;
+let luckyNumber = 2;
 console.log('what is my lucky number?:', 8);
 
 // 6 - Console log this sentence, adding in the variables you created above: 
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
 console.log('Hello my name is ' + fullName + ', and I think ' + luckyNumber + ' is a winner!');
+// another way
+console.log(`Hello my name is ${fullName}, and I think ${luckyNumber} is a winner!`);
 
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
-let adventurous = false;
+let adventurous = true;
 
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 let food = 'mangoes';
@@ -45,7 +47,7 @@ let pets = 0;
 let friendsPets = 30;
 
 // 11 - Add two pets to your `pets` variable
-pets = pets+=30;
+pets = pets+=2;
 console.log('you have ' + pets + ' pets');
 
 
@@ -55,17 +57,17 @@ const allowedPets = 555;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
 
-if(adventurous==true){
-    console.log('this person surely is adventurous! ˚₊‧꒰ა ☆ ໒꒱ ‧₊˚');
+if(adventurous===true){
+    console.log(' "Adventures are great!" exact text for resubmission (this person surely is adventurous! ˚₊‧꒰ა ☆ ໒꒱ ‧₊˚)');
 } 
 else{
-    console.log('most adventures involve this person being at home ૮꒰⸝⸝>  ̫ <⸝⸝꒱ა');
+    console.log('"How about we stay home?" (most adventures involve this person being at home ૮꒰⸝⸝>  ̫ <⸝⸝꒱ა)');
 }
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if(luckyNumber = 2 && adventurous == true){
-    console.log('Roll the dice baby!!');
+if(luckyNumber === 2 && adventurous === true){
+    console.log('"Roll the dice!" (Roll the dice baby!!)');
 }else{
     console.log('You may not roll the dice, today is not your lucky day :(');
 }
@@ -78,7 +80,7 @@ if(luckyNumber = 2 && adventurous == true){
 // if the value of `pets` is greater than the value of `allowedPets`.
 if(pets < allowedPets){
     console.log('You are allowed to have more pets');
-} else if(pets == allowedPets){
+} else if(pets === allowedPets){
     console.log('You have the maximum amount of pets. The number of pets you have is enough');
 } else {
     console.log('You have too many pets, oh no!');
@@ -112,7 +114,6 @@ if(pets > friendsPets && youWin == true ){
     morePets = 'you both have the same amount of pets';
 }
 
-
 console.log(morePets);
 
 
@@ -127,6 +128,11 @@ console.log(morePets);
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-const adventureIndex = 
-adventurous == true ? "It is great you are adventurous!" : "Don't forget to get some vitamin D!";
+//const adventureIndex = 
+//adventurous == true ? "It is great you are adventurous!" : "Don't forget to get some vitamin D!";
+//console.log(adventureIndex);
+
+// another way, that is more concise. I do not need to compare to true first 
+//if the variable is already initalized to a boolean, good to know
+const adventureIndex = adventurous ? "It is great you are adventurous!" : "Don't forget to get some vitamin D!"
 console.log(adventureIndex);
